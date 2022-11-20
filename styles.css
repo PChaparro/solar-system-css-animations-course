@@ -105,6 +105,25 @@ div p {
   animation: earth-orbit 3.65s infinite linear;
 }
 
+.moon-orbit {
+  width: 120px;
+  height: 120px;
+  /*  border: 4px dotted white; */
+}
+
+.moon {
+  position: absolute;
+
+  top: calc(60px - 10px);
+  left: calc(60px - 10px);
+
+  width: 20px;
+  height: 20px;
+  background-color: #e8e8e8;
+
+  animation: moon-orbit 0.8s infinite linear;
+}
+
 .mars-orbit {
   width: 720px;
   height: 720px;
@@ -122,6 +141,44 @@ div p {
   background-color: #ae653a;
 
   animation: mars-orbit 6.5s infinite linear;
+}
+
+.phobos-orbit {
+  width: 120px;
+  height: 120px;
+  /*  border: 4px dotted white; */
+}
+
+.phobos {
+  position: absolute;
+
+  top: calc(60px - 5px);
+  left: calc(60px - 5px);
+
+  width: 10px;
+  height: 10px;
+  background-color: #e8e8e8;
+
+  animation: phobos-orbit 0.8s infinite linear;
+}
+
+.deimos-orbit {
+  width: 200px;
+  height: 200px;
+  /*  border: 4px dotted white; */
+}
+
+.deimos {
+  position: absolute;
+
+  top: calc(100px - 5px);
+  left: calc(100px - 5px);
+
+  width: 10px;
+  height: 10px;
+  background-color: #e8e8e8;
+
+  animation: deimos-orbit 3.6s infinite linear;
 }
 
 .jupyter-orbit {
@@ -229,12 +286,39 @@ div p {
   }
 }
 
+@keyframes moon-orbit {
+  0% {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
+
 @keyframes mars-orbit {
   0% {
     transform: rotate(0deg) translateX(360px) rotate(0deg);
   }
   100% {
     transform: rotate(360deg) translateX(360px) rotate(-360deg);
+  }
+}
+
+@keyframes phobos-orbit {
+  0% {
+    transform: rotate(0deg) translateX(60px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(60px) rotate(-360deg);
+  }
+}
+
+@keyframes deimos-orbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
   }
 }
 
