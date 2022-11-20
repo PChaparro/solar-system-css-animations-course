@@ -162,6 +162,45 @@ div p {
   animation: saturn-orbit 107.6s infinite linear;
 }
 
+.saturn-ring {
+  border: 2px solid white;
+}
+
+.saturn-ring-1 {
+  width: 80px;
+  height: 80px;
+}
+
+.saturn-ring-2 {
+  width: 90px;
+  height: 90px;
+}
+
+.saturn-ring-3 {
+  width: 100px;
+  height: 100px;
+}
+
+.saturn-ring-4 {
+  width: 130px;
+  height: 130px;
+}
+
+.saturn-ring-5 {
+  width: 140px;
+  height: 140px;
+}
+
+.saturn-ring-6 {
+  width: 150px;
+  height: 150px;
+}
+
+.saturn-ring-7 {
+  width: 160px;
+  height: 160px;
+}
+
 /* Animations */
 @keyframes mercury-orbit {
   0% {
