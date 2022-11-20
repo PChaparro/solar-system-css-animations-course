@@ -1,0 +1,76 @@
+/* Reset  initial values */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+.space {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+/* Reusable classes */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+div p {
+  position: absolute;
+  left: -75px;
+
+  color: white;
+  font-weight: bold;
+}
+
+/* Planets */
+
+.sun {
+  width: 160px;
+  height: 160px;
+  background-color: orange;
+}
+
+.mercury-orbit {
+  width: 200px;
+  height: 200px;
+  border: 4px dotted white;
+}
+
+.mercury {
+  position: absolute;
+
+  /* Center - planet radius */
+  top: calc(100px - 20px);
+  left: calc(100px - 20px);
+
+  width: 40px;
+  height: 40px;
+  background-color: #e1e1e1;
+
+  animation: mercury-orbit 2s infinite ease;
+}
+
+/* Animations */
+@keyframes mercury-orbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
